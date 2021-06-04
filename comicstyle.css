@@ -1,0 +1,20 @@
+#boxstyle{
+    text-align: center;
+    margin: 96px 296px 96px 296px;
+    background-color: white;
+    font-family: Marker Felt, fantasy;
+    border-radius: 24px;
+    
+}
+body{
+    background-color:  #f2f6ff;
+}
+
+.buttonstyle{
+    background-color: #f2f6ff;
+    font-size: 20px ;
+    font-family: Marker Felt, fantasy;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    border: 0;
+}

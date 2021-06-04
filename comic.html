@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = "text/css" href="comicstyle.css">
+    <title> xkcd Comics</title>   
+</head>
+<body> 
+    <div id="loader" class=" d-flex">
+        <div class="loader"></div>
+    </div>
+    <div id = "boxstyle">
+    <div>
+        <h1> xkcd comics strips</h1>
+    </div> 
+    <span id="error"></span>
+    <div>
+        <button class="buttonstyle" id="first"> << </button>
+        <button class="buttonstyle" id="previous"> < prev</button>
+        <button class="buttonstyle" id="random"> random </button>
+        <button class="buttonstyle" id="next"> next ></button>
+        <button class="buttonstyle" id="last"> >> </button>
+    </div>
+    <div class = "mainbox"> 
+        <h2 id="comictitle">Loading ...</h2>
+        <div id="comicdate">...</div>
+        <img id="comicimage"/>
+        
+    </div>
+    <div class="footbox">
+        <h4 class="searchbox">Search Comics by ID</h4>
+        <form id="comic-form" class=" d-flex ">
+            <div>
+                <input
+                    aria-label="find comics by ID"
+                    type="number"
+                    id="search"
+                    class="form-control"
+                    placeholder="Comics number"
+                    required
+                />
+            </div>
+            <button type="submit" class="buttonstyle">find</button>
+        </form>
+        <span id="form-error"></span>
+    </div>
+</div>
+<script src="https://unpkg.com/superagent"></script>
+    <script src = "comic.js"> </script>
+</body>
+</html>
